@@ -1,0 +1,1 @@
+cp letter_template.svg letter_template_outline.svg && inkscape letter_template_outline.svg --verb=EditSelectAllInAllLayers --verb=StrokeToPath --verb=FileSave --verb=FileQuit && python3 layer2svg.py letter_template_outline.svg letters

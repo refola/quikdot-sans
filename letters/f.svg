@@ -1,0 +1,20 @@
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.inkscape.org/namespaces/inkscape" xmlns:ns2="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns4="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" height="1800" id="svg8" version="1.1" viewBox="0 0 198.43751 476.24999" width="750" ns2:docname="letter_template_outline.svg" ns1:version="0.92.3 (2405546, 2018-03-11)">
+  <ns0:defs id="defs2">
+    <ns1:path-effect apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect4489" is_visible="true" only_selected="false" steps="2" weight="33.333333" />
+  </ns0:defs>
+  <ns2:namedview bordercolor="#666666" borderopacity="1.0" id="base" pagecolor="#ffffff" showgrid="true" units="px" ns1:current-layer="layer55" ns1:cx="-580.49002" ns1:cy="1253.6741" ns1:document-units="mm" ns1:measure-end="262.5,562.5" ns1:measure-start="262.5,900" ns1:object-nodes="true" ns1:pageopacity="0.0" ns1:pageshadow="2" ns1:snap-bbox="false" ns1:snap-smooth-nodes="true" ns1:window-height="1026" ns1:window-maximized="1" ns1:window-width="1920" ns1:window-x="0" ns1:window-y="0" ns1:zoom="0.32000001">
+    <ns1:grid empspacing="4" enabled="true" id="grid4485" spacingx="9.9218752" spacingy="9.9218752" type="xygrid" />
+  </ns2:namedview>
+  <ns0:metadata id="metadata5">
+    <rdf:RDF>
+      <ns4:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </ns4:Work>
+    </rdf:RDF>
+  </ns0:metadata>
+  <ns0:g id="layer4" style="display:inline" transform="translate(0,5e-5)" ns1:groupmode="layer" ns1:label="f">
+    <ns0:path d="M 120.38477,0 V 100.54102 H 79.375 c -16.106506,1e-5 -30.900698,5.31321 -42.003906,14.45703 -11.103208,9.14382 -18.494273,21.36027 -23.626953,34.55859 C 3.4787789,175.95327 1.3222656,207.33043 1.3222656,238.125 c 0,30.79456 2.1565117,62.17171 12.4218754,88.56836 5.132681,13.19832 12.523741,25.41477 23.626953,34.55859 11.103212,9.14383 25.897394,14.45704 42.003906,14.45703 16.106513,0 30.9007,-5.3132 42.00391,-14.45703 11.10321,-9.14382 18.49427,-21.36027 23.62695,-34.55859 10.26536,-26.39664 12.42187,-57.7738 12.42187,-88.56836 V 0 Z M 79.375,137.58398 h 41.00977 V 238.125 c 0,28.73669 -2.80443,56.89077 -9.90235,75.14258 -3.54896,9.1259 -7.94061,15.51198 -12.650389,19.39062 -4.709779,3.87865 -9.75885,6.00781 -18.457031,6.00782 -8.69817,0 -13.747253,-2.12918 -18.457031,-6.00782 -4.709778,-3.87864 -9.101427,-10.26472 -12.650391,-19.39062 -7.097927,-18.25181 -9.902344,-46.40589 -9.902344,-75.14258 0,-28.7367 2.804421,-56.89078 9.902344,-75.14258 3.548962,-9.1259 7.940611,-15.51198 12.650391,-19.39062 4.709779,-3.87865 9.758854,-6.00781 18.457031,-6.00782 z" id="path829" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:37.04166794;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" ns1:connector-curvature="0" />
+  </ns0:g>
+  </ns0:svg>

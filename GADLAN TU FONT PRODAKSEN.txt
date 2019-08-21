@@ -1,0 +1,51 @@
+IMPORTIŊ GLIFS TU FONTFORGE:
+* Gò tu template.svg, selékt ol glifs ánd ran 'Stroke to Path'
+* Éxport tu template_outline.svg in fòlder 'letters'
+* Ran đe komand:
+	> cp letter_template.svg letter_template_outline.svg && inkscape letter_template_outline.svg --verb=EditSelectAllInAllLayers --verb=StrokeToPath --verb=FileSave --verb=FileQuit && python3 layer2svg.py letter_template_outline.svg letters
+	* Éxplenēśen: Mēks e nù kopí of 'letter_template.svg', kold 'letter_template_outline.svg'. Ùzes đe Inkscape komand lān ùtilití tu transform ol stròks in đe kopí intu paŧs. Ran đe Python skript tu éxtrákt íc indivijūl lēer in đe kopí intu đér òn svg fāls, íc of wic ház 1 léter glif.
+* Import ol of đe rizaltiŋ .svg glifs intu Fontforge wan bā wan
+* In Fontforge, gò tu Element -> Transformations -> Transform..., sét đe 'Origin' tu 'Glyph Origin'. Muv đe botem of ol glifs dàn bā đe difrens bitwín đe lòest pōnt of e tol léter ánd đe bēslān
+
+SÉTIŊ ĐE LĀN SPĒSIŊ (from hyer: http://benwhitmore.altervista.org/line-spacing-getting-right/):
+* Gò tu Element -> Font Info -> OS/2 -> Metrics
+* Mēk śer ol đe 'IsOffset' fílds ar not cékd
+* Sét đe 'Win Ascent' ánd 'Win Descent' fílds (boŧ pozitiv válùs) tu đe hāest ánd lòest part of đe glif réspéktivli (1700 ánd 440 fòr mā Quikscript Geometric font)
+* Sét đe sēm válùs fòr 'Typo Ascent/Descent' ánd 'HHead Ascent/Descent', éxsépt đét đe 'descent' mast bi négetiv fòr đíz fílds. Bòŧ 'line gap' fields śuld bi zirò, ánd énśer 'Really use Typo metrics' is cékd
+
+ELĀNMENT:
+Selékt ol glifs ánd gò tu Metrics -> Set Both Bearings... , sét it to 100 fòr olmost ol léters
+	* Fòr t i u ue: sét bòŧ bériŋs tu 150
+	* Fòr d h ee ei e au er -ie -ier: sét léft bériŋ tu 150 ánd rāt bériŋ tu 100
+	* Fòr p f ie o oi: sét rāt bériŋ tu 150
+
+Fòr đe nùmerels, sét widŧ tu 750, ánd đén sét đe léft bériŋs áz falòiŋ:
+	* 0_q 1_q 7_q 8_q 9_q: 100
+	* 4_q 6_q: 124
+	* 2_q 3_q 5_q: 150
+
+HINTIŊ:
+* Hints -> Autohint fòr béter font rénderiŋ
+
+FIXIŊ ÉNI LIŊGERIŊ ÉRERS:
+* Selékt ol glifs
+* Element -> Add Extrema
+* Element -> Round -> To Int
+* Fòr 'x' ánd 'gz' onli: Element -> Overlap -> Remove Overlap
+
+LIGECERS:
+Nòt: yu, '-ie' ánd '-ier' háv slātli modifād àtlāns from đe témplēt tu mēk đém ízèr tu ríd. Đe pōnts át đe śarp 'v' korner wer brot dàn slātli.  
+* Tu kriēt e ligecer, rāt klik đe glif ánd đén gò tu Glyph info... -> Ligatures
+* <New Ligature> -> New Lookup Subtable...
+* In 'Source Glyph Names', put đíz fòr đe coréspondiŋ ligecers: 
+	yu: uniE660 uniE67E
+	eir: uniE673 uniE668
+	ar: uniE676 uniE668
+	ohr: uniE677 uniE668
+	er: uniE67A uniE668
+	-ie: uniE670 uniE67A
+	-ier: uniE670 uniE67A uniE668
+* Klik 'Ok'
+
+Observēśen: 120px stròk widŧ is tu ŧin, 160px is kwāt ŧik
+140px mēks fòr e gud kompromās

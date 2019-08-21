@@ -1,0 +1,20 @@
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.inkscape.org/namespaces/inkscape" xmlns:ns2="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns4="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" height="1800" id="svg8" version="1.1" viewBox="0 0 198.43751 476.24999" width="750" ns2:docname="letter_template_outline.svg" ns1:version="0.92.3 (2405546, 2018-03-11)">
+  <ns0:defs id="defs2">
+    <ns1:path-effect apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect4489" is_visible="true" only_selected="false" steps="2" weight="33.333333" />
+  </ns0:defs>
+  <ns2:namedview bordercolor="#666666" borderopacity="1.0" id="base" pagecolor="#ffffff" showgrid="true" units="px" ns1:current-layer="layer55" ns1:cx="-580.49002" ns1:cy="1253.6741" ns1:document-units="mm" ns1:measure-end="262.5,562.5" ns1:measure-start="262.5,900" ns1:object-nodes="true" ns1:pageopacity="0.0" ns1:pageshadow="2" ns1:snap-bbox="false" ns1:snap-smooth-nodes="true" ns1:window-height="1026" ns1:window-maximized="1" ns1:window-width="1920" ns1:window-x="0" ns1:window-y="0" ns1:zoom="0.32000001">
+    <ns1:grid empspacing="4" enabled="true" id="grid4485" spacingx="9.9218752" spacingy="9.9218752" type="xygrid" />
+  </ns2:namedview>
+  <ns0:metadata id="metadata5">
+    <rdf:RDF>
+      <ns4:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </ns4:Work>
+    </rdf:RDF>
+  </ns0:metadata>
+  <ns0:g id="layer27" style="display:inline" transform="translate(0,5e-5)" ns1:groupmode="layer" ns1:label="y">
+    <ns0:path d="m 138.90625,1.3222656 c -32.19097,0 -58.208984,30.1337574 -58.208984,68.1308594 V 100.54102 H 49.609375 v 37.04296 H 80.697266 V 377.03125 H 117.74023 V 137.58398 h 21.16602 c 32.19097,0 58.20898,-30.13375 58.20898,-68.130855 0,-37.997103 -26.01801,-68.1308594 -58.20898,-68.1308594 z m 0,37.0429684 c 7.49653,0 21.16602,9.553754 21.16602,31.087891 0,21.534147 -13.66949,31.087895 -21.16602,31.087895 H 117.74023 V 69.453125 c 0,-21.534138 13.66949,-31.087891 21.16602,-31.087891 z" id="path4530-7" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:37.04166794;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" ns1:connector-curvature="0" />
+  </ns0:g>
+  </ns0:svg>

@@ -1,0 +1,20 @@
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.inkscape.org/namespaces/inkscape" xmlns:ns2="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns4="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" height="1800" id="svg8" version="1.1" viewBox="0 0 198.43751 476.24999" width="750" ns2:docname="letter_template_outline.svg" ns1:version="0.92.3 (2405546, 2018-03-11)">
+  <ns0:defs id="defs2">
+    <ns1:path-effect apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect4489" is_visible="true" only_selected="false" steps="2" weight="33.333333" />
+  </ns0:defs>
+  <ns2:namedview bordercolor="#666666" borderopacity="1.0" id="base" pagecolor="#ffffff" showgrid="true" units="px" ns1:current-layer="layer55" ns1:cx="-580.49002" ns1:cy="1253.6741" ns1:document-units="mm" ns1:measure-end="262.5,562.5" ns1:measure-start="262.5,900" ns1:object-nodes="true" ns1:pageopacity="0.0" ns1:pageshadow="2" ns1:snap-bbox="false" ns1:snap-smooth-nodes="true" ns1:window-height="1026" ns1:window-maximized="1" ns1:window-width="1920" ns1:window-x="0" ns1:window-y="0" ns1:zoom="0.32000001">
+    <ns1:grid empspacing="4" enabled="true" id="grid4485" spacingx="9.9218752" spacingy="9.9218752" type="xygrid" />
+  </ns2:namedview>
+  <ns0:metadata id="metadata5">
+    <rdf:RDF>
+      <ns4:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </ns4:Work>
+    </rdf:RDF>
+  </ns0:metadata>
+  <ns0:g id="layer33" style="display:inline" transform="translate(0,5e-5)" ns1:groupmode="layer" ns1:label="o">
+    <ns0:path d="m 79.375,100.54102 v 37.04296 h 19.84375 c 13.67015,0 27.83443,6.46479 39.75391,22.35743 11.91948,15.89264 21.09961,41.5829 21.09961,78.18359 v 138.90625 h 37.04296 V 238.125 c 0,-42.7743 -10.66361,-76.61529 -28.50976,-100.41016 -17.84615,-23.79486 -43.36935,-37.17382 -69.38672,-37.17382 z" id="path984-5" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:37.04166794;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" ns1:connector-curvature="0" />
+  </ns0:g>
+  </ns0:svg>

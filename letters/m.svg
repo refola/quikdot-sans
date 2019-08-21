@@ -1,0 +1,20 @@
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.inkscape.org/namespaces/inkscape" xmlns:ns2="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns4="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" height="1800" id="svg8" version="1.1" viewBox="0 0 198.43751 476.24999" width="750" ns2:docname="letter_template_outline.svg" ns1:version="0.92.3 (2405546, 2018-03-11)">
+  <ns0:defs id="defs2">
+    <ns1:path-effect apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect4489" is_visible="true" only_selected="false" steps="2" weight="33.333333" />
+  </ns0:defs>
+  <ns2:namedview bordercolor="#666666" borderopacity="1.0" id="base" pagecolor="#ffffff" showgrid="true" units="px" ns1:current-layer="layer55" ns1:cx="-580.49002" ns1:cy="1253.6741" ns1:document-units="mm" ns1:measure-end="262.5,562.5" ns1:measure-start="262.5,900" ns1:object-nodes="true" ns1:pageopacity="0.0" ns1:pageshadow="2" ns1:snap-bbox="false" ns1:snap-smooth-nodes="true" ns1:window-height="1026" ns1:window-maximized="1" ns1:window-width="1920" ns1:window-x="0" ns1:window-y="0" ns1:zoom="0.32000001">
+    <ns1:grid empspacing="4" enabled="true" id="grid4485" spacingx="9.9218752" spacingy="9.9218752" type="xygrid" />
+  </ns2:namedview>
+  <ns0:metadata id="metadata5">
+    <rdf:RDF>
+      <ns4:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </ns4:Work>
+    </rdf:RDF>
+  </ns0:metadata>
+  <ns0:g id="layer6" style="display:inline" transform="translate(0,5e-5)" ns1:groupmode="layer" ns1:label="m">
+    <ns0:path d="m 119.0625,100.54102 c -35.939236,0 -66.987907,18.84572 -87.107422,47.58789 C 11.835563,176.87107 1.3222656,215.19444 1.3222656,257.96875 v 80.69727 H 0 v 37.04296 h 1.3222656 v 31.0879 c 0,18.99856 6.6449441,36.63908 19.0683594,49.0625 12.423415,12.42341 30.063945,19.06835 49.0625,19.06835 18.998555,0 36.639085,-6.64494 49.062495,-19.06835 12.42342,-12.42342 19.06836,-30.06394 19.06836,-49.0625 0,-18.99855 -6.64494,-36.63909 -19.06836,-49.0625 C 106.09221,345.31096 88.451679,338.66602 69.453125,338.66602 H 38.365234 v -80.69727 c 0,-36.60071 9.330452,-67.73044 23.9375,-88.59766 14.607049,-20.86721 33.167748,-31.7871 56.759766,-31.78711 h 19.84375 V 100.54102 Z M 38.365234,375.70898 h 31.087891 c 10.767076,10e-6 17.931226,3.27693 22.871094,8.2168 4.939867,4.93987 8.216801,12.10404 8.216801,22.8711 0,10.76708 -3.276936,17.93122 -8.216801,22.87109 -4.939866,4.93987 -12.104019,8.2168 -22.871094,8.2168 -10.767075,0 -17.931227,-3.27693 -22.871094,-8.2168 -4.939867,-4.93987 -8.216797,-12.10401 -8.216797,-22.87109 z" id="path828-3" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:37.04166794;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" ns1:connector-curvature="0" />
+  </ns0:g>
+</ns0:svg>
