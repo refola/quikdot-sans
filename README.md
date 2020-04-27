@@ -1,6 +1,6 @@
-# QuikDots
+# QuikDot
 
-QuikDots Sans is a modified [Quikscript
+QuikDot Sans is a modified [Quikscript
 Sans](https://bitbucket.org/pcdandy/quikscript-sans) (see
 [`README-upstream.md`](README-upstream.md)) which replaces the Latin
 alphabetic characters a-z, A-Z, ø, æ, Æ, Ø, and ß, and ẞ with
@@ -13,7 +13,7 @@ dots above their minuscule forms.
 
 # License
 
-QuikDots Sans is licensed under [the SIL Open Font License, Version
+QuikDot Sans is licensed under [the SIL Open Font License, Version
 1.1](LICENSE), just like upstream Quikscript Sans.
 
 
