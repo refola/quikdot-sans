@@ -13,7 +13,7 @@ dots above their minuscule forms.
 
 # Metrics
 
-Based on side-by-side in-line visual comparison in Emacs on my system,
+<!-- Based on side-by-side in-line visual comparison in Emacs on my system,
 I'm aiming for minuscule Dotsies `x` height to take the vertical space
 of a "tall" Quikscript letter. Dots will then each take 1/5 of this
 space and be perfectly square. Dotsies' tiny capitalization dots will
@@ -24,7 +24,11 @@ In terms of [`guides.svg`](letters/guides.svg) from Quikscript Sans'
 source, Dotsies letters go from the lower horizontal red line to the
 top of the box. Capitalization dots are roughly the middle half of the
 vertical red line's above-box height and about a 1/3 the width of
-letter dots.
+letter dots. -->
+
+I'm just seeing what happens if I set a nominally 3x18 SVG to have
+each 3x3 cell be a Dotsies dot (with a capitalization dot only taking
+the center middle and top-middle pixels).
 
 
 # Building
