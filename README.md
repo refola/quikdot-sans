@@ -26,9 +26,19 @@ top of the box. Capitalization dots are roughly the middle half of the
 vertical red line's above-box height and about a 1/3 the width of
 letter dots. -->
 
-I'm just seeing what happens if I set a nominally 3x18 SVG to have
-each 3x3 cell be a Dotsies dot (with a capitalization dot only taking
-the center middle and top-middle pixels).
+In order to satisfy FontForge according to [the first search result
+DuckDuckGo gave
+me](http://designwithfontforge.com/en-US/Importing_Glyphs_from_Other_Programs.html),
+metrics are `y=0` at the top, `y=1000` at the bottom, and `y=800` as
+the baseline. In Dotsies terms, this means 800/6 = 133⅓ SVG units per
+dot. So I'm rounding to 134, units each, including for the
+capitalization dot. Thus all characters will go 4 units below
+baseline, a nominal error of 0.4%. Capitalization dots will occupy
+(44, 0) thru (90, 90).
+
+<-- TODO: adjust `generate_dotsies.sh` accordingly. It needs
+`viewBox="0 0 134 1000"`, and new coordinates calculated for all
+rectangles. -->
 
 
 # Building
