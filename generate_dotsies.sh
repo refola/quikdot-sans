@@ -2,32 +2,24 @@
 # generate_dotsies.sh
 # Systematically generate Dotsies glyph files for font import.
 
-here="$(dirname "$(readlink -f "$0")")"
-# Be here now, because absolute coordinates are a pain.
-cd "$here" || exit 1
+## dbg message
+# print debug message to stderr
+dbg() {
+    [ -n "$DEBUG" ] &&
+        echo "$*" >&2
+}
 
-## get-svg feature
-# Returns SVG code for the given feature. Valid codes are as follows:
-# - head   SVG header
-# - 1-5    dot positions, counting from bottom
-# - cap    capitalization dot
-# - foot   SVG footer
-get-svg() {
+## name-of char
+# return the given character's name, usually itself
+name-of() {
     case "$1" in
-        "head")
-            echo '<svg width="3" height="18">'
+        ' ')
+            echo space
             ;;
-        1|2|3|4|5)
-            printf $'\t''<rect width="3" height="3" fill="black" x="0" y="%s" />' \
-                   $((18-3*$1))
+        *)
+            echo "$1"
             ;;
-        "cap")
-            echo $'\t''<rect width="1" height="2" fill="black" x="1" y="0" />'
-            ;;
-        "foot")
-            echo '</svg>'
-            ;;
-        esac
+    esac
 }
 
 ## generate magic_string [caps]
@@ -48,7 +40,8 @@ generate() {
     # 4. add caps dot if applicabple
     # 5. add footer
     # 6. write to file
-    local i char image dots pos n=$'\n'
+    # 7. add to namelist.txt
+    local i char name image dots pos n=$'\n' hex
     for i in {0..31}; do
         char="${1:$i:1}"
         if [ "$char" = " " ] && ([ "$i" != 0 ] || [ -n "$2" ]); then
@@ -66,9 +59,64 @@ generate() {
             image+="$(get-svg cap)$n"
         fi
         image+="$(get-svg foot)"
-        echo "$image" > "./dotsies/$char.svg"
+        name="$(name-of "$char")"
+        dbg "char '$char' has name '$name'"
+        echo "$image" > "$name.svg"
+        hex="$(echo -n "$1" | hexdump --format '/1 "%02x"')"
+        printf '0x%s %s\n' "$hex" "$name" >> "$NAMELIST"
     done
 }
 
-generate " ediclhvbnkugtsøaomyjxræfwqzpÆØß"
-generate " EDICLHVBNKUGTS AOMYJXR FWQZP  ẞ" caps
+## get-svg feature
+# Returns SVG code for the given feature. Valid codes are as follows:
+# - head   SVG header
+# - 1-5    dot positions, counting from bottom
+# - cap    capitalization dot
+# - foot   SVG footer
+get-svg() {
+    local height=1000
+    #local baseline=800 # TODO: actually use this?
+    local width=$((height/6))
+    case "$1" in
+        "head")
+            # viewbox="xmin ymin xmax ymax"
+            printf '<svg viewBox="0 0 %s %s">' $width $height
+            ;;
+        1|2|3|4|5)
+            printf $'\t''<rect width="%s" height="%s" fill="black" x="%s" y="%s" />' \
+                   $width $width 0 $((height-width*$1))
+            ;;
+        "cap")
+            printf $'\t''<rect width="%s" height="%s" fill="black" x="%s" y="%s" />' \
+                   $((width/3)) $((2*width/3)) $((width/3)) 0
+            ;;
+        "foot")
+            echo '</svg>'
+            ;;
+    esac
+}
+
+## main "$@"
+# run the script
+main() {
+    if [ "$1" = "debug" ]; then
+        declare -g DEBUG=true
+        dbg "debug mode active"
+    else
+        echo "(use '$0 debug' for debug output)"
+    fi
+
+    # Be here now, because absolute coordinates are a pain.
+    cd "$(dirname "$(readlink -f "$0")")/dotsies" ||
+        exit 1
+
+    declare -g NAMELIST=namelist.txt
+
+    rm "$NAMELIST"
+    touch "$NAMELIST"
+    rm ./*.svg
+    generate " ediclhvbnkugtsøaomyjxræfwqzpÆØß"
+    generate " EDICLHVBNKUGTS AOMYJXR FWQZP  ẞ" caps
+}
+
+main "$@"
