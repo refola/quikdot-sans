@@ -10,20 +10,68 @@ dbg() {
     fi
 }
 
+## fail message
+# print message to stderr and about script
+fail() {
+    echo "$@" >&2
+    exit 1
+}
+
 ## name-of char
-# return the given character's name, usually itself
+# echo the given character's name, usually itself
 name-of() {
     case "$1" in
         ' ') # otherwise looks empty in namelist
             echo space
             ;;
-        'ẞ') # otherwise causes namelist import error in FontForge
-            echo Eszett
-            ;;
         *)
             echo "$1"
             ;;
     esac
+}
+
+## codepoint-of char
+# echo the given character's Unicode codepoint
+# assumptions:
+# - valid UTF-8 encoding
+# - numbers in unsigned 32-bit integer range don't overflow shell arithmetic
+codepoint-of() {
+    local hex dec out code
+    local m3=7 m4=15 m5=31 m6=63 m7=127 # bit masks; mn is rightmost n bits
+    hex="$(echo -n "$1" | hexdump --format '/1 "%02X"')"
+    dec="$(echo -e "ibase=16\n$hex" | bc)"
+    case $((${#hex}/2)) in # switch on number of bytes
+        1) # ASCII range; 0xxxxxxx
+            out=$((dec & m7))
+            ;;
+        2) # 110xxxxx 10xxxxxx
+            out=$((
+                     ((dec & (m5<<8)) >> 2) +
+                     (dec & m6)
+                 ))
+            ;;
+        3) # 1110xxxx 10xxxxxx 10xxxxxx
+            out=$((
+                     ((dec & (m4<<16)) >> 4) +
+                     ((dec & (m6<<8)) >> 2) +
+                     (dec & m6)
+                 ))
+            ;;
+        4) # 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+            out=$((
+                     ((dec & (m3<<24)) >> 6) +
+                     ((dec & (m6<<16)) >> 4) +
+                     ((dec & (m6<<8)) >> 2) +
+                     (dec & m6)
+                 ))
+            ;;
+        *) # UTF-8 uses at most 4 bytes per character.
+            fail "bad UTF-8 character: '$1' with hex '$hex'"
+            ;;
+    esac
+    code="$(echo -e "obase=16\n$out" | bc)"
+    dbg "char is '$1', hex is '$hex', dec is '$dec', out is '$out', code is '$code'"
+    echo "$code"
 }
 
 ## generate magic_string [caps]
@@ -45,7 +93,7 @@ generate() {
     # 5. add footer
     # 6. write to file
     # 7. add to namelist.txt
-    local i char name image dots pos n=$'\n' hex
+    local i char name image dots pos n=$'\n' codepoint
     for i in {0..31}; do
         char="${1:$i:1}"
         if [ "$char" = " " ] && ([ "$i" != 0 ] || [ -n "$2" ]); then
@@ -65,9 +113,9 @@ generate() {
         image+="$(get-svg foot)"
         name="$(name-of "$char")"
         echo "$image" > "$name.svg"
-        hex="$(echo -n "$char" | hexdump --format '/1 "%02x"')"
-        printf '0x%s %s\n' "$hex" "$name" >> "$NAMELIST"
-        dbg "char '$char' has name '$name' and hex '$hex'"
+        codepoint="$(codepoint-of "$char")"
+        printf '0x%s %s\n' "$codepoint" "$name" >> "$NAMELIST"
+        dbg "char '$char' has name '$name' and codepoint '$codepoint'"
     done
 }
 
