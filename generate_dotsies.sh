@@ -5,8 +5,9 @@
 ## dbg message
 # print debug message to stderr
 dbg() {
-    [ -n "$DEBUG" ] &&
+    if [ -n "$DEBUG" ]; then
         echo "$*" >&2
+    fi
 }
 
 ## name-of char
@@ -60,10 +61,10 @@ generate() {
         fi
         image+="$(get-svg foot)"
         name="$(name-of "$char")"
-        dbg "char '$char' has name '$name'"
         echo "$image" > "$name.svg"
-        hex="$(echo -n "$1" | hexdump --format '/1 "%02x"')"
+        hex="$(echo -n "$char" | hexdump --format '/1 "%02x"')"
         printf '0x%s %s\n' "$hex" "$name" >> "$NAMELIST"
+        dbg "char '$char' has name '$name' and hex '$hex'"
     done
 }
 
