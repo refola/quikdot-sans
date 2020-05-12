@@ -14,8 +14,11 @@ dbg() {
 # return the given character's name, usually itself
 name-of() {
     case "$1" in
-        ' ')
+        ' ') # otherwise looks empty in namelist
             echo space
+            ;;
+        'ẞ') # otherwise causes namelist import error in FontForge
+            echo Eszett
             ;;
         *)
             echo "$1"
